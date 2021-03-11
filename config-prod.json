@@ -1,0 +1,7 @@
+{
+  "db_host": "postgres",
+  "db_port": "5432",
+  "db_schema": "public",
+  "db_name": "gjg-test-task",
+  "db_password": "postgres"
+}

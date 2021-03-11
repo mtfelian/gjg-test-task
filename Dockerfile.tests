@@ -1,0 +1,6 @@
+FROM golang:1.15.8
+WORKDIR '/github.com/mtfelian/gjg-test-task'
+COPY . .
+RUN go install github.com/onsi/ginkgo/ginkgo
+RUN go build
+CMD ["sh", "-c", "ginkgo -r && mv gjg-test-task bin/gjg-test-task"]
